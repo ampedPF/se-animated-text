@@ -1,0 +1,47 @@
+body {
+    display: flex;
+  }
+  
+  .rect {
+    background-color: red;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .container {
+    width: 2000px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+  }
+  
+  .container > span {
+    position: absolute;
+  }
+  
+  .text1 {
+    letter-spacing: {{text1LetterSpacing}};
+    text-transform: {{text1TextTransform}};
+    color: {{text1Color}};
+    font-family: '{{text1FontName}}';
+    font-size: {{text1FontSize}}px;
+    font-weight: {{text1FontWeight}};
+    text-shadow: {{text1ShadowH}}px {{text1ShadowV}}px {{text1ShadowB}}px {{text1ShadowColor}};
+  }
+  
+  .text2 {
+    letter-spacing: {{text2LetterSpacing}};
+    text-transform: {{text2TextTransform}};
+    color: {{text2Color}};
+    font-family: '{{text2FontName}}';
+    font-size: {{text2FontSize}}px;
+    font-weight: {{text2FontWeight}};
+    text-shadow: {{text2ShadowH}}px {{text2ShadowV}}px {{text2ShadowB}}px {{text2ShadowColor}};
+  }
+  
+  .text1 .letter, .text2 .letter {
+    display: inline-block;
+  }

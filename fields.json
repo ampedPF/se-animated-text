@@ -1,0 +1,163 @@
+{
+    "text1": {
+        "type": "text",
+        "label": "Text",
+        "value": "A New Production",
+        "group": "Text 1"
+    },
+    "text1LetterSpacing": {
+        "type": "text",
+        "label": "Letter Spacing: normal, 2px, 1em",
+        "value": "0.5em",
+        "group": "Text 1"
+    },
+    "text1Color": {
+        "label": "Color",
+        "type": "colorpicker",
+        "value": "#707070",
+        "group": "Text 1"
+    },
+    "text1FontName": {
+        "label": "Font Name",
+        "type": "googleFont",
+        "value": "Roboto",
+        "group": "Text 1"
+    },
+    "text1FontSize": {
+        "label": "Font Size",
+        "type": "number",
+        "value": 36,
+        "group": "Text 1"
+    },
+    "text1FontWeight": {
+        "label": "Font Weight",
+        "type": "dropdown",
+        "value": "700",
+        "options": {
+            "100": "Thin (100)",
+            "300": "Light (300)",
+            "400": "Regular (400)",
+            "500": "Medium (500)",
+            "700": "Bold (700)",
+            "900": "Black (900)"
+        },
+        "group": "Text 1"
+    },
+    "text1TextTransform": {
+        "label": "Text Transform",
+        "type": "dropdown",
+        "value": "none",
+        "options": {
+            "capitalize": "Capitalize",
+            "lowercase": "lowercase",
+            "none": "None",
+            "uppercase": "UPPERCASE"
+        },
+        "group": "Text 1"
+    },
+    "text1ShadowH": {
+        "label": "Shadow Horizontal Position",
+        "type": "number",
+        "value": 0,
+        "group": "Text 1"
+    },
+    "text1ShadowV": {
+        "label": "Shadow Vertical Position",
+        "type": "number",
+        "value": 0,
+        "group": "Text 1"
+    },
+    "text1ShadowB": {
+        "label": "Shadow Blur",
+        "type": "number",
+        "value": 0,
+        "group": "Text 1"
+    },
+    "text1ShadowColor": {
+        "label": "Shadow Color",
+        "type": "colorpicker",
+        "value": "#000000",
+        "group": "Text 1"
+    },
+
+    "text2": {
+        "type": "text",
+        "label": "Text",
+        "value": "A Old Saying",
+        "group": "Text 2"
+    },
+    "text2LetterSpacing": {
+        "type": "text",
+        "label": "Letter Spacing: normal / 2px / 1em",
+        "value": "0.5em",
+        "group": "Text 2"
+    },
+    "text2Color": {
+        "label": "Color",
+        "type": "colorpicker",
+        "value": "#707070",
+        "group": "Text 2"
+    },
+    "text2FontName": {
+        "label": "Font Name",
+        "type": "googleFont",
+        "value": "Roboto",
+        "group": "Text 2"
+    },
+    "text2FontSize": {
+        "label": "Font Size",
+        "type": "number",
+        "value": 36,
+        "group": "Text 2"
+    },
+    "text2FontWeight": {
+        "label": "Font Weight",
+        "type": "dropdown",
+        "value": "700",
+        "options": {
+            "100": "Thin (100)",
+            "300": "Light (300)",
+            "400": "Regular (400)",
+            "500": "Medium (500)",
+            "700": "Bold (700)",
+            "900": "Black (900)"
+        },
+        "group": "Text 2"
+    },
+    "text2TextTransform": {
+        "label": "Text Transform",
+        "type": "dropdown",
+        "value": "none",
+        "options": {
+            "capitalize": "Capitalize",
+            "lowercase": "lowercase",
+            "none": "None",
+            "uppercase": "UPPERCASE"
+        },
+        "group": "Text 2"
+    },
+    "text2ShadowH": {
+        "label": "Shadow Horizontal Position",
+        "type": "number",
+        "value": 0,
+        "group": "Text 2"
+    },
+    "text2ShadowV": {
+        "label": "Shadow Vertical Position",
+        "type": "number",
+        "value": 0,
+        "group": "Text 2"
+    },
+    "text2ShadowB": {
+        "label": "Shadow Blur",
+        "type": "number",
+        "value": 0,
+        "group": "Text 2"
+    },
+    "text2ShadowColor": {
+        "label": "Shadow Color",
+        "type": "colorpicker",
+        "value": "#000000",
+        "group": "Text 2"
+    }
+}
