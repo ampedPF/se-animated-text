@@ -1,163 +1,642 @@
 {
-    "text1": {
-        "type": "text",
-        "label": "Text",
-        "value": "A New Production",
-        "group": "Text 1"
+  "testModeEnabled": {
+    "label": "Activate Test Mode",
+    "type": "checkbox",
+    "value": false,
+    "group": "Test Mode"
+  },
+  "testModeDisableAnimations": {
+    "label": "Disable Animations",
+    "type": "checkbox",
+    "value": true,
+    "group": "Test Mode"
+  },
+  "testModeBackgroundColor": {
+    "label": "Background Color",
+    "type": "colorpicker",
+    "value": "#002244",
+    "group": "Test Mode"
+  },
+  "testModeDisplayBackgroundColor": {
+    "label": "Display Background Color",
+    "type": "checkbox",
+    "value": true,
+    "group": "Test Mode"
+  },
+  "testModeDisplayText1": {
+    "label": "Display Text1",
+    "type": "checkbox",
+    "value": true,
+    "group": "Test Mode"
+  },
+  "testModeBox1BackgroundColor": {
+    "label": "Box1 Background Color",
+    "type": "colorpicker",
+    "value": "rgba(0, 68, 102, 0.4)",
+    "group": "Test Mode"
+  },
+  "testModeDisplayBox1BackgroundColor": {
+    "label": "Display Box1 Background Color",
+    "type": "checkbox",
+    "value": true,
+    "group": "Test Mode"
+  },
+  "testModeDisplayText2": {
+    "label": "Display Text2",
+    "type": "checkbox",
+    "value": true,
+    "group": "Test Mode"
+  },
+  "testModeBox2BackgroundColor": {
+    "label": "Box2 Background Color",
+    "type": "colorpicker",
+    "value": "rgba(0, 68, 34, 0.4)",
+    "group": "Test Mode"
+  },
+  "testModeDisplayBox2BackgroundColor": {
+    "label": "Display Box2 Background Color",
+    "type": "checkbox",
+    "value": true,
+    "group": "Test Mode"
+  },
+  "textWordSpacing": {
+    "label": "Word Spacing: normal, 2px, 1em",
+    "type": "text",
+    "value": "1.2em",
+    "group": "Text Global"
+  },
+  "text1Value": {
+    "label": "Text (type \\s to add a non-breaking space)",
+    "type": "text",
+    "value": "First example text",
+    "group": "Text Global"
+  },
+  "text2Value": {
+    "label": "Text (type \\s to add a non-breaking space)",
+    "type": "text",
+    "value": "And\\sA Secondary\\sOne",
+    "group": "Text Global"
+  },
+  "text1LetterSpacing": {
+    "label": "Letter Spacing: normal, 2px, 1em",
+    "type": "text",
+    "value": "0.6em",
+    "group": "Text 1 Font"
+  },
+  "text1Color": {
+    "label": "Color",
+    "type": "colorpicker",
+    "value": "#707070",
+    "group": "Text 1 Font"
+  },
+  "text1FontName": {
+    "label": "Font Name (see https://fonts.google.com)",
+    "type": "googleFont",
+    "value": "Roboto",
+    "group": "Text 1 Font"
+  },
+  "text1FontSize": {
+    "label": "Font Size",
+    "type": "number",
+    "value": 36,
+    "group": "Text 1 Font"
+  },
+  "text1FontWeight": {
+    "label": "Font Weight",
+    "type": "dropdown",
+    "value": "700",
+    "options": {
+      "100": "Thin (100)",
+      "300": "Light (300)",
+      "400": "Regular (400)",
+      "500": "Medium (500)",
+      "700": "Bold (700)",
+      "900": "Black (900)"
     },
-    "text1LetterSpacing": {
-        "type": "text",
-        "label": "Letter Spacing: normal, 2px, 1em",
-        "value": "0.5em",
-        "group": "Text 1"
+    "group": "Text 1 Font"
+  },
+  "text1TextTransform": {
+    "label": "Text Transform",
+    "type": "dropdown",
+    "value": "none",
+    "options": {
+      "lowercase": "lowercase",
+      "uppercase": "UPPERCASE",
+      "none": "none"
     },
-    "text1Color": {
-        "label": "Color",
-        "type": "colorpicker",
-        "value": "#707070",
-        "group": "Text 1"
+    "group": "Text 1 Font"
+  },
+  "text1ShadowH": {
+    "label": "Shadow Horizontal Position",
+    "type": "number",
+    "value": 0,
+    "group": "Text 1 Font"
+  },
+  "text1ShadowV": {
+    "label": "Shadow Vertical Position",
+    "type": "number",
+    "value": 0,
+    "group": "Text 1 Font"
+  },
+  "text1ShadowB": {
+    "label": "Shadow Blur",
+    "type": "number",
+    "value": 0,
+    "group": "Text 1 Font"
+  },
+  "text1ShadowColor": {
+    "label": "Shadow Color",
+    "type": "dropdown",
+    "value": "#000000",
+    "group": "Text 1 Font"
+  },
+  "text1Height": {
+    "label": "Box Height (auto, 50%, 10em, 900px)",
+    "type": "text",
+    "value": "auto",
+    "group": "Text 1 Display"
+  },
+  "text1Width": {
+    "label": "Box Width (auto, 50%, 10em, 900px)",
+    "type": "text",
+    "value": "auto",
+    "group": "Text 1 Display"
+  },
+  "text1BoxJustifyContent": {
+    "label": "Box Justify Content",
+    "type": "dropdown",
+    "value": "center",
+    "options": {
+      "start": "start",
+      "center": "center",
+      "end": "end",
+      "space-between": "space-between",
+      "space-around": "space-around",
+      "space-evenly": "space-evenly"
     },
-    "text1FontName": {
-        "label": "Font Name",
-        "type": "googleFont",
-        "value": "Roboto",
-        "group": "Text 1"
+    "group": "Text 1 Display"
+  },
+  "text1BoxAlignItems": {
+    "label": "Box Align Items",
+    "type": "dropdown",
+    "value": "center",
+    "options": {
+      "start": "start",
+      "center": "center",
+      "end": "end"
     },
-    "text1FontSize": {
-        "label": "Font Size",
-        "type": "number",
-        "value": 36,
-        "group": "Text 1"
+    "group": "Text 1 Display"
+  },
+  "text1FlexDirection": {
+    "label": "Flex Direction",
+    "type": "dropdown",
+    "value": "row",
+    "options": {
+      "row": "row",
+      "column": "column",
+      "row-reverse": "row-reverse",
+      "column-reverse": "column-reverse"
     },
-    "text1FontWeight": {
-        "label": "Font Weight",
-        "type": "dropdown",
-        "value": "700",
-        "options": {
-            "100": "Thin (100)",
-            "300": "Light (300)",
-            "400": "Regular (400)",
-            "500": "Medium (500)",
-            "700": "Bold (700)",
-            "900": "Black (900)"
-        },
-        "group": "Text 1"
+    "group": "Text 1 Display"
+  },
+  "text1FlexJustifyContent": {
+    "label": "Justify Content",
+    "type": "dropdown",
+    "value": "center",
+    "options": {
+      "start": "start",
+      "center": "center",
+      "end": "end",
+      "space-between": "space-between",
+      "space-around": "space-around",
+      "space-evenly": "space-evenly"
     },
-    "text1TextTransform": {
-        "label": "Text Transform",
-        "type": "dropdown",
-        "value": "none",
-        "options": {
-            "capitalize": "Capitalize",
-            "lowercase": "lowercase",
-            "none": "None",
-            "uppercase": "UPPERCASE"
-        },
-        "group": "Text 1"
+    "group": "Text 1 Display"
+  },
+  "text1FlexAlignItems": {
+    "label": "Align Items",
+    "type": "dropdown",
+    "value": "center",
+    "options": {
+      "start": "start",
+      "center": "center",
+      "end": "end"
     },
-    "text1ShadowH": {
-        "label": "Shadow Horizontal Position",
-        "type": "number",
-        "value": 0,
-        "group": "Text 1"
+    "group": "Text 1 Display"
+  },
+  "text1TranslateXIn": {
+    "label": "TranslateX In",
+    "type": "slider",
+    "value": 100,
+    "min": -1000,
+    "max": 1000,
+    "step": 10,
+    "group": "Text 1 Animation"
+  },
+  "text1TranslateYIn": {
+    "label": "TranslateY In",
+    "type": "slider",
+    "value": 0,
+    "min": -1000,
+    "max": 1000,
+    "step": 10,
+    "group": "Text 1 Animation"
+  },
+  "text1TranslateXOut": {
+    "label": "TranslateX Out",
+    "type": "slider",
+    "value": -100,
+    "min": -1000,
+    "max": 1000,
+    "step": 10,
+    "group": "Text 1 Animation"
+  },
+  "text1TranslateYOut": {
+    "label": "TranslateY Out",
+    "type": "slider",
+    "value": 0,
+    "min": -1000,
+    "max": 1000,
+    "step": 10,
+    "group": "Text 1 Animation"
+  },
+  "text1EasingIn": {
+    "label": "Easing In",
+    "type": "dropdown",
+    "value": "easeOutExpo",
+    "options": {
+      "linear": "linear",
+      "easeInSine": "easeInSine",
+      "easeOutSine": "easeOutSine",
+      "easeInOutSine": "easeInOutSine",
+      "easeInQuad": "easeInQuad",
+      "easeOutQuad": "easeOutQuad",
+      "easeInOutQuad": "easeInOutQuad",
+      "easeInCubic": "easeInCubic",
+      "easeOutCubic": "easeOutCubic",
+      "easeInOutCubic": "easeInOutCubic",
+      "easeInQuart": "easeInQuart",
+      "easeOutQuart": "easeOutQuart",
+      "easeInOutQuart": "easeInOutQuart",
+      "easeInQuint": "easeInQuint",
+      "easeOutQuint": "easeOutQuint",
+      "easeInOutQuint": "easeInOutQuint",
+      "easeInExpo": "easeInExpo",
+      "easeOutExpo": "easeOutExpo",
+      "easeInOutExpo": "easeInOutExpo",
+      "easeInCirc": "easeInCirc",
+      "easeOutCirc": "easeOutCirc",
+      "easeInOutCirc": "easeInOutCirc",
+      "easeInBack": "easeInBack"
     },
-    "text1ShadowV": {
-        "label": "Shadow Vertical Position",
-        "type": "number",
-        "value": 0,
-        "group": "Text 1"
+    "group": "Text 1 Animation"
+  },
+  "text1DurationIn": {
+    "label": "Duration In",
+    "type": "Number",
+    "value": 2000,
+    "group": "Text 1 Animation"
+  },
+  "text1DelayInBase": {
+    "label": "Delay In Base",
+    "type": "Number",
+    "value": 1000,
+    "group": "Text 1 Animation"
+  },
+  "text1DelayInStep": {
+    "label": "Delay In Step",
+    "type": "Number",
+    "value": 60,
+    "group": "Text 1 Animation"
+  },
+  "text1EasingOut": {
+    "label": "Easing Out",
+    "type": "dropdown",
+    "value": "easeInExpo",
+    "options": {
+      "linear": "linear",
+      "easeInSine": "easeInSine",
+      "easeOutSine": "easeOutSine",
+      "easeInOutSine": "easeInOutSine",
+      "easeInQuad": "easeInQuad",
+      "easeOutQuad": "easeOutQuad",
+      "easeInOutQuad": "easeInOutQuad",
+      "easeInCubic": "easeInCubic",
+      "easeOutCubic": "easeOutCubic",
+      "easeInOutCubic": "easeInOutCubic",
+      "easeInQuart": "easeInQuart",
+      "easeOutQuart": "easeOutQuart",
+      "easeInOutQuart": "easeInOutQuart",
+      "easeInQuint": "easeInQuint",
+      "easeOutQuint": "easeOutQuint",
+      "easeInOutQuint": "easeInOutQuint",
+      "easeInExpo": "easeInExpo",
+      "easeOutExpo": "easeOutExpo",
+      "easeInOutExpo": "easeInOutExpo",
+      "easeInCirc": "easeInCirc",
+      "easeOutCirc": "easeOutCirc",
+      "easeInOutCirc": "easeInOutCirc",
+      "easeInBack": "easeInBack"
     },
-    "text1ShadowB": {
-        "label": "Shadow Blur",
-        "type": "number",
-        "value": 0,
-        "group": "Text 1"
+    "group": "Text 1 Animation"
+  },
+  "text1DurationOut": {
+    "label": "Duration Out",
+    "type": "Number",
+    "value": 2000,
+    "group": "Text 1 Animation"
+  },
+  "text1DelayOutBase": {
+    "label": "Delay Out Base",
+    "type": "Number",
+    "value": 1000,
+    "group": "Text 1 Animation"
+  },
+  "text1DelayOutStep": {
+    "label": "Delay Out Step",
+    "type": "Number",
+    "value": 60,
+    "group": "Text 1 Animation"
+  },
+  "text2LetterSpacing": {
+    "label": "Letter Spacing: normal, 2px, 1em",
+    "type": "text",
+    "value": "0.6em",
+    "group": "Text 2 Font"
+  },
+  "text2Color": {
+    "label": "Color",
+    "type": "colorpicker",
+    "value": "#707070",
+    "group": "Text 2 Font"
+  },
+  "text2FontName": {
+    "label": "Font Name (see https://fonts.google.com)",
+    "type": "googleFont",
+    "value": "Roboto",
+    "group": "Text 2 Font"
+  },
+  "text2FontSize": {
+    "label": "Font Size",
+    "type": "number",
+    "value": 36,
+    "group": "Text 2 Font"
+  },
+  "text2FontWeight": {
+    "label": "Font Weight",
+    "type": "dropdown",
+    "value": "700",
+    "options": {
+      "100": "Thin (100)",
+      "300": "Light (300)",
+      "400": "Regular (400)",
+      "500": "Medium (500)",
+      "700": "Bold (700)",
+      "900": "Black (900)"
     },
-    "text1ShadowColor": {
-        "label": "Shadow Color",
-        "type": "colorpicker",
-        "value": "#000000",
-        "group": "Text 1"
+    "group": "Text 2 Font"
+  },
+  "text2TextTransform": {
+    "label": "Text Transform",
+    "type": "dropdown",
+    "value": "none",
+    "options": {
+      "lowercase": "lowercase",
+      "uppercase": "UPPERCASE",
+      "none": "none"
     },
-
-    "text2": {
-        "type": "text",
-        "label": "Text",
-        "value": "A Old Saying",
-        "group": "Text 2"
+    "group": "Text 2 Font"
+  },
+  "text2ShadowH": {
+    "label": "Shadow Horizontal Position",
+    "type": "number",
+    "value": 0,
+    "group": "Text 2 Font"
+  },
+  "text2ShadowV": {
+    "label": "Shadow Vertical Position",
+    "type": "number",
+    "value": 0,
+    "group": "Text 2 Font"
+  },
+  "text2ShadowB": {
+    "label": "Shadow Blur",
+    "type": "number",
+    "value": 0,
+    "group": "Text 2 Font"
+  },
+  "text2ShadowColor": {
+    "label": "Shadow Color",
+    "type": "dropdown",
+    "value": "#000000",
+    "group": "Text 2 Font"
+  },
+  "text2Height": {
+    "label": "Box Height (auto, 50%, 10em, 900px)",
+    "type": "text",
+    "value": "auto",
+    "group": "Text 2 Display"
+  },
+  "text2Width": {
+    "label": "Box Width (auto, 50%, 10em, 900px)",
+    "type": "text",
+    "value": "auto",
+    "group": "Text 2 Display"
+  },
+  "text2BoxJustifyContent": {
+    "label": "Box Justify Content",
+    "type": "dropdown",
+    "value": "center",
+    "options": {
+      "start": "start",
+      "center": "center",
+      "end": "end",
+      "space-between": "space-between",
+      "space-around": "space-around",
+      "space-evenly": "space-evenly"
     },
-    "text2LetterSpacing": {
-        "type": "text",
-        "label": "Letter Spacing: normal / 2px / 1em",
-        "value": "0.5em",
-        "group": "Text 2"
+    "group": "Text 2 Display"
+  },
+  "text2BoxAlignItems": {
+    "label": "Box Align Items",
+    "type": "dropdown",
+    "value": "center",
+    "options": {
+      "start": "start",
+      "center": "center",
+      "end": "end"
     },
-    "text2Color": {
-        "label": "Color",
-        "type": "colorpicker",
-        "value": "#707070",
-        "group": "Text 2"
+    "group": "Text 2 Display"
+  },
+  "text2FlexDirection": {
+    "label": "Flex Direction",
+    "type": "dropdown",
+    "value": "column",
+    "options": {
+      "row": "row",
+      "column": "column",
+      "row-reverse": "row-reverse",
+      "column-reverse": "column-reverse"
     },
-    "text2FontName": {
-        "label": "Font Name",
-        "type": "googleFont",
-        "value": "Roboto",
-        "group": "Text 2"
+    "group": "Text 2 Display"
+  },
+  "text2FlexJustifyContent": {
+    "label": "Justify Content",
+    "type": "dropdown",
+    "value": "center",
+    "options": {
+      "start": "start",
+      "center": "center",
+      "end": "end",
+      "space-between": "space-between",
+      "space-around": "space-around",
+      "space-evenly": "space-evenly"
     },
-    "text2FontSize": {
-        "label": "Font Size",
-        "type": "number",
-        "value": 36,
-        "group": "Text 2"
+    "group": "Text 2 Display"
+  },
+  "text2FlexAlignItems": {
+    "label": "Align Items",
+    "type": "dropdown",
+    "value": "center",
+    "options": {
+      "start": "start",
+      "center": "center",
+      "end": "end"
     },
-    "text2FontWeight": {
-        "label": "Font Weight",
-        "type": "dropdown",
-        "value": "700",
-        "options": {
-            "100": "Thin (100)",
-            "300": "Light (300)",
-            "400": "Regular (400)",
-            "500": "Medium (500)",
-            "700": "Bold (700)",
-            "900": "Black (900)"
-        },
-        "group": "Text 2"
+    "group": "Text 2 Display"
+  },
+  "text2TranslateXIn": {
+    "label": "TranslateX In",
+    "type": "slider",
+    "value": 100,
+    "min": -1000,
+    "max": 1000,
+    "step": 10,
+    "group": "Text 2 Animation"
+  },
+  "text2TranslateYIn": {
+    "label": "TranslateY In",
+    "type": "slider",
+    "value": 0,
+    "min": -1000,
+    "max": 1000,
+    "step": 10,
+    "group": "Text 2 Animation"
+  },
+  "text2TranslateXOut": {
+    "label": "TranslateX Out",
+    "type": "slider",
+    "value": -100,
+    "min": -1000,
+    "max": 1000,
+    "step": 10,
+    "group": "Text 2 Animation"
+  },
+  "text2TranslateYOut": {
+    "label": "TranslateY Out",
+    "type": "slider",
+    "value": 0,
+    "min": -1000,
+    "max": 1000,
+    "step": 10,
+    "group": "Text 2 Animation"
+  },
+  "text2EasingIn": {
+    "label": "Easing In",
+    "type": "dropdown",
+    "value": "easeOutExpo",
+    "options": {
+      "linear": "linear",
+      "easeInSine": "easeInSine",
+      "easeOutSine": "easeOutSine",
+      "easeInOutSine": "easeInOutSine",
+      "easeInQuad": "easeInQuad",
+      "easeOutQuad": "easeOutQuad",
+      "easeInOutQuad": "easeInOutQuad",
+      "easeInCubic": "easeInCubic",
+      "easeOutCubic": "easeOutCubic",
+      "easeInOutCubic": "easeInOutCubic",
+      "easeInQuart": "easeInQuart",
+      "easeOutQuart": "easeOutQuart",
+      "easeInOutQuart": "easeInOutQuart",
+      "easeInQuint": "easeInQuint",
+      "easeOutQuint": "easeOutQuint",
+      "easeInOutQuint": "easeInOutQuint",
+      "easeInExpo": "easeInExpo",
+      "easeOutExpo": "easeOutExpo",
+      "easeInOutExpo": "easeInOutExpo",
+      "easeInCirc": "easeInCirc",
+      "easeOutCirc": "easeOutCirc",
+      "easeInOutCirc": "easeInOutCirc",
+      "easeInBack": "easeInBack"
     },
-    "text2TextTransform": {
-        "label": "Text Transform",
-        "type": "dropdown",
-        "value": "none",
-        "options": {
-            "capitalize": "Capitalize",
-            "lowercase": "lowercase",
-            "none": "None",
-            "uppercase": "UPPERCASE"
-        },
-        "group": "Text 2"
+    "group": "Text 2 Animation"
+  },
+  "text2DurationIn": {
+    "label": "Duration In",
+    "type": "Number",
+    "value": 2000,
+    "group": "Text 2 Animation"
+  },
+  "text2DelayInBase": {
+    "label": "Delay In Base",
+    "type": "Number",
+    "value": 1000,
+    "group": "Text 2 Animation"
+  },
+  "text2DelayInStep": {
+    "label": "Delay In Step",
+    "type": "Number",
+    "value": 60,
+    "group": "Text 2 Animation"
+  },
+  "text2EasingOut": {
+    "label": "Easing Out",
+    "type": "dropdown",
+    "value": "easeInExpo",
+    "options": {
+      "linear": "linear",
+      "easeInSine": "easeInSine",
+      "easeOutSine": "easeOutSine",
+      "easeInOutSine": "easeInOutSine",
+      "easeInQuad": "easeInQuad",
+      "easeOutQuad": "easeOutQuad",
+      "easeInOutQuad": "easeInOutQuad",
+      "easeInCubic": "easeInCubic",
+      "easeOutCubic": "easeOutCubic",
+      "easeInOutCubic": "easeInOutCubic",
+      "easeInQuart": "easeInQuart",
+      "easeOutQuart": "easeOutQuart",
+      "easeInOutQuart": "easeInOutQuart",
+      "easeInQuint": "easeInQuint",
+      "easeOutQuint": "easeOutQuint",
+      "easeInOutQuint": "easeInOutQuint",
+      "easeInExpo": "easeInExpo",
+      "easeOutExpo": "easeOutExpo",
+      "easeInOutExpo": "easeInOutExpo",
+      "easeInCirc": "easeInCirc",
+      "easeOutCirc": "easeOutCirc",
+      "easeInOutCirc": "easeInOutCirc",
+      "easeInBack": "easeInBack"
     },
-    "text2ShadowH": {
-        "label": "Shadow Horizontal Position",
-        "type": "number",
-        "value": 0,
-        "group": "Text 2"
-    },
-    "text2ShadowV": {
-        "label": "Shadow Vertical Position",
-        "type": "number",
-        "value": 0,
-        "group": "Text 2"
-    },
-    "text2ShadowB": {
-        "label": "Shadow Blur",
-        "type": "number",
-        "value": 0,
-        "group": "Text 2"
-    },
-    "text2ShadowColor": {
-        "label": "Shadow Color",
-        "type": "colorpicker",
-        "value": "#000000",
-        "group": "Text 2"
-    }
+    "group": "Text 2 Animation"
+  },
+  "text2DurationOut": {
+    "label": "Duration Out",
+    "type": "Number",
+    "value": 2000,
+    "group": "Text 2 Animation"
+  },
+  "text2DelayOutBase": {
+    "label": "Delay Out Base",
+    "type": "Number",
+    "value": 1000,
+    "group": "Text 2 Animation"
+  },
+  "text2DelayOutStep": {
+    "label": "Delay Out Step",
+    "type": "Number",
+    "value": 60,
+    "group": "Text 2 Animation"
+  }
 }

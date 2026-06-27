@@ -1,47 +1,82 @@
-body {
-    display: flex;
-  }
-  
-  .rect {
-    background-color: red;
-    position: absolute;
-    width: 50%;
-    height: 50%;
-  }
-  
-  .container {
-    width: 2000px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    padding-left: 60px;
-  }
-  
-  .container > span {
-    position: absolute;
-  }
-  
-  .text1 {
-    letter-spacing: {{text1LetterSpacing}};
-    text-transform: {{text1TextTransform}};
-    color: {{text1Color}};
-    font-family: '{{text1FontName}}';
-    font-size: {{text1FontSize}}px;
-    font-weight: {{text1FontWeight}};
-    text-shadow: {{text1ShadowH}}px {{text1ShadowV}}px {{text1ShadowB}}px {{text1ShadowColor}};
-  }
-  
-  .text2 {
-    letter-spacing: {{text2LetterSpacing}};
-    text-transform: {{text2TextTransform}};
-    color: {{text2Color}};
-    font-family: '{{text2FontName}}';
-    font-size: {{text2FontSize}}px;
-    font-weight: {{text2FontWeight}};
-    text-shadow: {{text2ShadowH}}px {{text2ShadowV}}px {{text2ShadowB}}px {{text2ShadowColor}};
-  }
-  
-  .text1 .letter, .text2 .letter {
-    display: inline-block;
-  }
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: {{testModeBackgroundColor}};
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.box1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: {{text1BoxJustifyContent}};
+  align-items: {{text1BoxAlignItems}};
+}
+
+.text1 {
+  height: {{text1Height}};
+  width: {{text1Width}};
+  background-color: {{testModeBox1BackgroundColor}};
+  display: flex;
+  flex-direction: {{text1FlexDirection}};
+  justify-content: {{text1FlexJustifyContent}};
+  align-items: {{text1FlexAlignItems}};
+  letter-spacing: calc({{text1LetterSpacing}} / 2);
+  text-indent: calc({{text1LetterSpacing}} / 2);
+  text-transform: {{text1TextTransform}};
+  color: {{text1Color}};
+  font-family: '{{text1FontName}}';
+  font-size: {{text1FontSize}}px;
+  font-weight: {{text1FontWeight}};
+  text-shadow: {{text1ShadowH}}px {{text1ShadowV}}px {{text1ShadowB}}px {{text1ShadowColor}};
+  white-space: break-spaces;
+}
+
+.box2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: {{text2BoxJustifyContent}};
+  align-items: {{text2BoxAlignItems}};
+}
+
+.text2 {
+  height: {{text2Height}};
+  width: {{text2Width}};
+  background-color: {{testModeBox2BackgroundColor}};
+  display: flex;
+  flex-direction: {{text2FlexDirection}};
+  justify-content: {{text2FlexJustifyContent}};
+  align-items: {{text2FlexAlignItems}};
+  letter-spacing: calc({{text2LetterSpacing}} /2);
+  text-indent: calc({{text2LetterSpacing}} /2);
+  text-transform: {{text2TextTransform}};
+  color: {{text2Color}};
+  font-family: '{{text2FontName}}';
+  font-size: {{text2FontSize}}px;
+  font-weight: {{text2FontWeight}};
+  text-shadow: {{text2ShadowH}}px {{text2ShadowV}}px {{text2ShadowB}}px {{text2ShadowColor}};
+  white-space: break-spaces;
+}
+
+.word {
+  display: flex;
+  padding: calc({{textWordSpacing}} / 2);
+}
+
+.letter {
+  display: inline-block;
+}
